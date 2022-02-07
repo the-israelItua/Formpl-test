@@ -1,0 +1,33 @@
+@import "styles/functions.scss";
+
+.searchbar {
+  height: pxToRem(45);
+  width: pxToRem(319);
+  border-radius: 2px;
+  border: 0.5px solid #bdbdbd;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding-left: pxToRem(32);
+  input {
+    height: pxToRem(45);
+    width: pxToRem(319);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      font-size: pxToEm(14);
+      font-style: normal;
+      font-weight: 400;
+      line-height: pxToRem(18);
+      color: #8f8b8b;
+      letter-spacing: 0.03rem;
+    }
+  }
+  svg {
+    position: absolute;
+    top: pxToRem(10);
+    right: pxToRem(15);
+  }
+}

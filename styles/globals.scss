@@ -1,0 +1,36 @@
+@import "./functions.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.margin-right-15 {
+  margin-right: 0.9375rem;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: grey !important;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border: 0.5px solid #c4c4c4 !important;
+  outline: #c4c4c4 !important;
+}
+
+.css-q8hpuo-MuiFormControl-root {
+  height: 39px !important;
+}

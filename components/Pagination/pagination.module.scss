@@ -1,0 +1,38 @@
+@import "styles/functions.scss";
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: pxToEm(18);
+    font-style: normal;
+    font-weight: 500;
+    line-height: pxToRem(23);
+    color: #3f3f3f;
+  }
+  &__nums {
+    display: flex;
+    align-items: center;
+    &__box {
+      height: pxToRem(30);
+      width: pxToRem(30);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #3f3f3f;
+      border-radius: 3px;
+      margin-right: pxToRem(12);
+    }
+  }
+
+  &__grp {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      margin-left: pxToRem(12);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "styles/functions.scss";
+
+.infoTab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff4ea;
+  height: pxToRem(60);
+  border-radius: 2px;
+  @media screen and (max-width: 1020px) {
+    padding-left: pxToRem(16);
+  }
+  p {
+    margin-left: pxToRem(16.2);
+    font-size: pxToEm(14);
+    font-style: normal;
+    font-weight: 400;
+    color: #252525;
+  }
+}
