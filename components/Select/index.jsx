@@ -16,7 +16,7 @@ export default function BasicSelect({ label, options, onChange, reset }) {
 
   useEffect(() => {
     if (reset) setSelected(options[0]);
-  }, [reset]);
+  }, [reset, options]);
 
   return (
     <Box sx={{ height: "19px" }}>

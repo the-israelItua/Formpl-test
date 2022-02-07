@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "../styles/index.module.scss";
-import { Oval } from "react-loader-spinner";
 import { Alert } from "@mui/material";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import SearchBar from "../components/SearchBar";
 import InfoTab from "../components/InfoTab";
 import TemplateCard from "../components/TemplateCard";
@@ -138,7 +136,7 @@ export default function Home() {
           </div>
           {loading ? (
             <div className={styles.main__content__loading}>
-              <Oval heigth="50" width="50" color="#ccc" ariaLabel="loading" />
+              <p>Fetching Templates...</p>
             </div>
           ) : !viewedTemplates.length ? (
             <div className={styles.main__content__empty}>
